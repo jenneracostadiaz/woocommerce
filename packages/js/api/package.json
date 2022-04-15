@@ -29,7 +29,7 @@
     "clean": "rm -rf ./dist ./tsconfig.tsbuildinfo",
     "compile": "tsc -b",
     "build": "pnpm run clean && npm run compile",
-    "prepare": "pnpm run build",
+    "prepack": "pnpm run build",
     "lint": "eslint src",
     "test": "jest"
   },
